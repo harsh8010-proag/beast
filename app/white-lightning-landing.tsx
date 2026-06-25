@@ -383,7 +383,7 @@ export default function WhiteLightningLanding() {
         </motion.div>
 
         <motion.div
-          className="relative mx-auto flex min-h-[520px] w-full max-w-[680px] items-end justify-center lg:min-h-[690px]"
+          className="relative mx-auto flex min-h-[520px] w-full max-w-[680px] items-end justify-center lg:min-h-[690px] bottom-24"
           initial={{ opacity: 0, scale: 0.94, y: 24 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
@@ -391,6 +391,8 @@ export default function WhiteLightningLanding() {
           <div className="absolute inset-x-8 bottom-10 h-48 rounded-full bg-sky-200/20 blur-3xl" />
           <div className="orbit-ring" />
           <div className="astronaut" aria-hidden="true">
+
+
             <span />
           </div>
           <Image
