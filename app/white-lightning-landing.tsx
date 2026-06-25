@@ -574,8 +574,8 @@ export default function WhiteLightningLanding() {
 
       <section className="relative z-10 px-5 py-20 sm:px-8">
         <SectionTitle eyebrow="Social proof" title="The Night Has Reviews" />
-        <div className="mx-auto grid max-w-7xl gap-5 lg:grid-cols-[1.05fr_0.95fr]">
-          <div className="grid gap-4">
+        <div className="mx-auto grid max-w-7xl gap-5 lg:grid-cols-2">
+          <div className="grid lg:grid-cols-2 gap-4">
             {reviews.map((review, index) => (
               <motion.article
                 key={review.name}
@@ -603,7 +603,7 @@ export default function WhiteLightningLanding() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ staggerChildren: 0.1 }}
           >
-            {["/BEASTmodel1.png", "/BEASTmodel2.png", "/BEASTmodel1.png", "/BEASTmodel2.png"].map(
+            {["/BEASTmodel2.png", "/BEASTmodel1.png"].map(
               (image, index) => (
                 <motion.div
                   key={`${image}-${index}`}
@@ -624,7 +624,7 @@ export default function WhiteLightningLanding() {
         </div>
       </section>
 
-      <section id="founder" className="relative z-10 px-5 py-20 sm:px-8">
+      <section id="founder" className="relative z-10 px-5  sm:px-8">
         <div className="mx-auto grid max-w-7xl items-center gap-8 rounded-lg border border-white/10 bg-white/[0.055] p-6 backdrop-blur-xl md:grid-cols-[0.9fr_1.1fr] md:p-10">
           <motion.div
             className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-lg bg-black/30"
@@ -750,7 +750,9 @@ export default function WhiteLightningLanding() {
               Privacy Policy
             </a>
           </div>
+
         </div>
+        <div className="text-sm text-center mt-4 text-sm text-zinc-400 ">Developed By Harish   :   2026</div>
       </footer>
     </main>
   );

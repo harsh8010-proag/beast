@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   applicationName: siteName,
   title: {
-    default: "BEAST | White Lightning Glow Jacket",
+    default: "White Lightning Glow Jacket | Futuristic Streetwear by BEAST",
     template: "%s | BEAST",
   },
   description,
