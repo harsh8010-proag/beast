@@ -19,15 +19,19 @@ const fadeUp = {
 
 const productViews = [
   {
-    title: "Front View",
-    image: "/front-product-image.png",
+    title: "Side View",
+    image: "/side.png",
     detail: "Reflective glow panels frame the jacket like mission armor.",
   },
-
+  {
+    title: "Front View",
+    image: "/front.png",
+    detail: "Reflective glow panels frame the jacket like mission armor.",
+  },
   {
     title: "Back View",
     image: "/back-product-image.png",
-    detail: "Clean astronaut energy with a luminous streetwear silhouette.",
+    detail: "Reflective glow panels frame the jacket like mission armor  .",
   },
 ];
 
@@ -91,7 +95,6 @@ const reels = [
     url: "https://www.instagram.com/reel/DZyu7q5B8Kz/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     thumbnail: "/thumbnail-5.png"
   },
-
   {
     title: "Jacket Review",
     url: "https://www.instagram.com/reel/DZ9SR3_NxvN/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
@@ -302,7 +305,7 @@ export default function WhiteLightningLanding() {
             className="h-12 w-auto object-contain"
           />
         </a>
-        <nav className="hidden items-center gap-8 text-sm text-zinc-300 md:flex">
+        <nav className="hidden items-center gap-8 text-sm text-zinc-300 md:flex bg-white/20 px-8 py-2 rounded-full">
           <a className="transition hover:text-white" href="#showcase">
             Showcase
           </a>
@@ -417,7 +420,7 @@ export default function WhiteLightningLanding() {
           title="Built For After Dark"
           copy="Three campaign views of the jacket, framed like a premium fashion mission briefing."
         />
-        <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-2 justify-items-center">
+        <div className="mx-auto text-center grid max-w-7xl gap-5 md:grid-cols-3 justify-items-center">
           {productViews.map((view, index) => (
             <motion.article
               key={view.title}
