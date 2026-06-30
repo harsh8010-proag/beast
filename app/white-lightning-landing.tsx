@@ -297,7 +297,7 @@ export default function WhiteLightningLanding() {
       <header className="relative z-10 mx-auto flex w-full max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
         <a href="#top" className="flex items-center gap-3" aria-label="White Lightning home">
           <Image
-            src="/logo-3 brand-name.png"
+            src="/beast-logo.png"
             alt="White Lightning"
             width={172}
             height={62}
@@ -399,22 +399,26 @@ export default function WhiteLightningLanding() {
             <span />
           </div>
           <Image
-            src="/BEASTmodel2.png"
-            alt="Model wearing the White Lightning glow jacket"
-            width={820}
+            src="/add-poster.png"
+            alt="add-poster"
+            width={1000}
             height={1060}
             priority
             sizes="(min-width: 1024px) 52vw, 92vw"
             className="relative z-10 max-h-[78vh] w-auto object-contain drop-shadow-[0_0_42px_rgba(186,230,253,0.34)]"
           />
-          <div className="absolute bottom-12 left-2 z-20 rounded-lg border border-white/10 bg-white/10 p-4 shadow-2xl backdrop-blur-xl sm:left-8">
+          {/* <div className="absolute -bottom-24 left-2 z-20 rounded-lg border border-white/10 bg-white/10 p-4 shadow-2xl backdrop-blur-xl sm:left-8">
             <p className="text-xs uppercase tracking-[0.28em] text-sky-100">Glow index</p>
             <p className="mt-2 text-3xl font-semibold">98%</p>
-          </div>
+          </div> */}
         </motion.div>
       </section>
+      {/* <section className="relative z-10 px-5   sm:px-8 flex items-center justify-center" >
+        <Image src='/add-poster.png' alt="add-poster" width={250}
+          height={100} />
+      </section> */}
 
-      <section id="showcase" className="relative z-10 px-5 py-20 sm:px-8">
+      <section id="showcase" className="relative z-10 px-5  sm:px-8">
         <SectionTitle
           eyebrow="Product showcase"
           title="Built For After Dark"
